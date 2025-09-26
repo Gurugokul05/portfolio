@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-import Avatar from "@mui/material/Avatar";
-import Stack from "@mui/material/Stack";
 import { Helmet } from "react-helmet";
 import { Menu, X } from "lucide-react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import "./Portfolio.css";
+
 const Portfolio = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div>
@@ -46,16 +50,16 @@ const Portfolio = () => {
           )}
 
           <ul className="hidden md:flex md:flex-wrap md:gap-2 sm:space-x-4 md:text-sm sm:text-base md:mt-2 sm:mt-0">
-            <li className="p-1 sm:p-2 cursor-pointer hover:text-slate-700 text-lg">
+            <li className="p-1 sm:p-2 cursor-pointer hover:text-slate-500 text-lg ">
               <a href="#">About Me</a>
             </li>
-            <li className="p-1 sm:p-2 cursor-pointer hover:text-slate-700  text-lg">
+            <li className="p-1 sm:p-2 cursor-pointer hover:text-slate-500  text-lg">
               <a href="#skills">Skills</a>
             </li>
-            <li className="p-1 sm:p-2 cursor-pointer hover:text-slate-700  text-lg">
+            <li className="p-1 sm:p-2 cursor-pointer hover:text-slate-500  text-lg">
               <a href="#project">Project</a>
             </li>
-            <li className="p-1 sm:p-2 cursor-pointer hover:text-slate-700  text-lg">
+            <li className="p-1 sm:p-2 cursor-pointer hover:text-slate-500  text-lg">
               <a href="#contactMe">Contact Me</a>
             </li>
           </ul>
@@ -94,9 +98,12 @@ const Portfolio = () => {
             Skills
           </span>
         </h1>
-        <div className="flex  flex-row flex-wrap md:flex-nowrap gap-4  mx-2 rounded-2xl p-2.5 md:mx-7 " id="skills">
+        <div
+          className="flex  flex-row flex-wrap md:flex-nowrap gap-4  mx-2 rounded-2xl p-2.5 md:mx-7 "
+          id="skills"
+        >
           {/* card1 */}
-          <div className=" mx-auto  bg-stone-100 shadow-2xl p-8 rounded-2xl mt-5 w-40 md:w-68 animate-[var(--animate-pop-up)] flex-none text-center hover:scale-105 transition-transform duration-300">
+          <div data-aos="fade" className=" mx-auto  bg-stone-100 shadow-2xl p-8 rounded-2xl mt-5 w-40 md:w-68 animate-[var(--animate-pop-up)] flex-none text-center hover:scale-105 transition-transform duration-300">
             <img
               src="public/html-5.png"
               alt="html-logo"
@@ -151,7 +158,7 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Intermediate</span>
           </div>
           {/* card6 */}
-          <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68  animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300">
+          <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68   text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
             <img
               src="public/github.png"
               alt="html-logo"
@@ -160,6 +167,42 @@ const Portfolio = () => {
             <span className="font-bold  text-center">GitHub</span>
             <br />
             <span className="font-semibold  text-center">Intermediate</span>
+          </div>
+        </div>
+
+        {/* projects */}
+
+        <h1 className="text-center mb-10 mt-10">
+          <span className="text-center font-medium text-2xl md:font-bold md:text-4xl ">
+            Projects
+          </span>
+        </h1>
+        <div
+          className="flex flex-col m-6 
+        "
+          id="project"
+        >
+         <div
+  className="mx-auto flex-none md:p-15 bg-stone-100 p-6 rounded-2xl mt-5 w-auto md:w-1/2 text-center shadow-2xl hover:scale-105 transition-transform duration-300"
+  data-aos="fade-up"
+>
+            <img
+              src="public/Screenshot 2025-09-26 072852.png"
+              alt="html-logo"
+              className="w-auto mb-7 mx-auto rounded-2xl "
+            />
+            <span className="font-semibold md:font-bold md:text-2xl text-center">
+              Food Ordering web site
+            </span>
+            <br />
+            <span className="font-light md:font-medium text-right md:text-lg">
+              A responsive web application where users can browse menus, add
+              items to cart, and place food orders online-similar to platforms
+              like Swiggy or Zomato.
+            </span>
+            <span className="block mt-3 text-xs font-medium md:text-lg text-gray-500">
+              <strong>Tech Stack:</strong> React, Firebase, Firestore DB
+            </span>
           </div>
         </div>
       </div>
