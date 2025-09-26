@@ -13,7 +13,7 @@ const Portfolio = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div>
-      <div className=" min-h-screen bg-[url('public/18106012.jpg')] bg-cover bg-center bg-fixed">
+      <div className=" min-h-screen bg-[url('/18106012.jpg')] bg-cover bg-center bg-fixed">
         <header className=" flex-wrap w-full flex items-center  justify-between  px-3 py-2  ">
           <Helmet>
             <title>Gurugokul</title>
@@ -85,7 +85,7 @@ const Portfolio = () => {
         {/* img section */}
         <div className="h-auto md:mt-20 flex flex-col  bg-inherit m-6 rounded-2xl  justify-center mt-10 sm:mt-20 items-center p-4 sm:p-10 md:flex-row  text-center font-playfair  md:p-0">
           <img
-            src="public/WhatsApp Image 2025-09-23 at 18.02.17_67974a1d.jpg"
+            src="/WhatsApp Image 2025-09-23 at 18.02.17_67974a1d.jpg"
             alt="Gurugokul"
             className=" rounded-full md:h-96 md:rounded-full mb-7 animate-[var(--animate-pop-up)] transform hover:scale-110 transition ease-linear duration-300"
           />
@@ -93,19 +93,22 @@ const Portfolio = () => {
         {/* end of about */}
 
         {/* skill */}
+        <div className="">
+
         <h1 className="text-center mb-10 ">
-          <span className="text-center font-medium text-2xl md:font-bold md:text-4xl ">
+          <span className="text-center  font-medium text-2xl md:font-bold md:text-4xl ">
             Skills
           </span>
         </h1>
+        </div>
         <div
-          className="flex  flex-row flex-wrap md:flex-nowrap gap-4  mx-2 rounded-2xl p-2.5 md:mx-7 "
+          className="flex  flex-row flex-wrap  gap-4  mx-2 rounded-2xl p-2.5 md:mx-7 "
           id="skills"
         >
           {/* card1 */}
-          <div data-aos="fade" className=" mx-auto  bg-stone-100 shadow-2xl p-8 rounded-2xl mt-5 w-40 md:w-68 animate-[var(--animate-pop-up)] flex-none text-center hover:scale-105 transition-transform duration-300">
+          <div data-aos="fade" className=" mx-auto md:w-64 bg-stone-100 shadow-2xl p-8 rounded-2xl mt-5 w-40 animate-[var(--animate-pop-up)] flex-none text-center hover:scale-105 transition-transform duration-300">
             <img
-              src="public/html-5.png"
+              src="/html-5.png"
               alt="html-logo"
               className="w-25 mb-3 mx-auto"
             />
@@ -114,9 +117,9 @@ const Portfolio = () => {
             <span className="font-semibold  text-center ">Intermediate</span>
           </div>
           {/* card2 */}
-          <div className="mx-auto  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68  animate-[var(--animate-pop-up)] flex-none text-center shadow-2xl hover:scale-105 transition-transform duration-300">
+          <div className="mx-auto  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64  animate-[var(--animate-pop-up)] flex-none text-center shadow-2xl hover:scale-105 transition-transform duration-300">
             <img
-              src="public/css-3.png"
+              src="/css-3.png"
               alt="html-logo"
               className="w-25 mb-3 mx-auto"
             />
@@ -125,9 +128,9 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Intermediate</span>
           </div>
           {/* card3 */}
-          <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68  animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300">
+          <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64  animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300">
             <img
-              src="public/programing.png"
+              src="/programing.png"
               alt="html-logo"
               className="w-25 mb-3 mx-auto"
             />
@@ -136,9 +139,9 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Intermediate</span>
           </div>
           {/* card4 */}
-          <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68  animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300">
+          <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64  animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300">
             <img
-              src="public/icons8-tailwind-css-480.png"
+              src="/icons8-tailwind-css-480.png"
               alt="html-logo"
               className="w-25 mb-3 mx-auto"
             />
@@ -148,9 +151,9 @@ const Portfolio = () => {
           </div>
           
           {/* card5 */}
-           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68   text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64  animate-[var(--animate-pop-up)] text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
             <img
-              src="public/javascript_original_logo_icon_146455.png"
+              src="/javascript_original_logo_icon_146455.png"
               alt="html-logo"
               className="w-25 mb-3 mx-auto"
             />
@@ -159,9 +162,9 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Intermediate</span>
           </div>
           {/* card6 */}
-           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68   text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64 animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
             <img
-              src="public/c_original_logo_icon_146611.png"
+              src="/c_original_logo_icon_146611.png"
               alt="html-logo"
               className="w-25 mb-3 mx-auto"
             />
@@ -170,9 +173,9 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Basic</span>
           </div>
           {/* card7 */}
-           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68   text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64 animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
             <img
-              src="public/file_type_python_icon_130221.png"
+              src="/file_type_python_icon_130221.png"
               alt="html-logo"
               className="w-25 mb-3 mx-auto"
             />
@@ -181,9 +184,9 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Basic</span>
           </div>
           {/* card8 */}
-           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68   text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64 animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
             <img
-              src="public/java_original_logo_icon_146458.png"
+              src="/java_original_logo_icon_146458.png"
               alt="html-logo"
               className="w-25 mb-3 mx-auto"
             />
@@ -192,9 +195,9 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Basic</span>
           </div>
           {/* card9 */}
-          <div className="mx-auto   bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68  animate-[var(--animate-pop-up)] flex-none text-center shadow-2xl hover:scale-105 transition-transform duration-300">
+          <div className="mx-auto   bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64  animate-[var(--animate-pop-up)] flex-none text-center shadow-2xl hover:scale-105 transition-transform duration-300">
             <img
-              src="public/icons8-firebase-480.png"
+              src="/icons8-firebase-480.png"
               alt="html-logo"
               className="w-25 mb-3 mx-auto"
             />
@@ -203,9 +206,9 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Intermediate</span>
           </div>
           {/* card10 */}
-          <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68   text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+          <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64 animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
             <img
-              src="public/github.png"
+              src="/github.png"
               alt="html-logo"
               className="w-25 mb-3 mx-auto"
             />
@@ -232,7 +235,7 @@ const Portfolio = () => {
   data-aos="fade-up"
 >
             <img
-              src="public/Screenshot 2025-09-26 072852.png"
+              src=" /Screenshot 2025-09-26 072852.png"
               alt="html-logo"
               className="w-auto mb-7 mx-auto rounded-2xl "
             />
