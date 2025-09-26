@@ -146,7 +146,52 @@ const Portfolio = () => {
             <br />
             <span className="font-semibold  text-center">Intermediate</span>
           </div>
+          
           {/* card5 */}
+           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68   text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+            <img
+              src="public/javascript_original_logo_icon_146455.png"
+              alt="html-logo"
+              className="w-25 mb-3 mx-auto"
+            />
+            <span className="font-bold  text-center">JavaScript</span>
+            <br />
+            <span className="font-semibold  text-center">Intermediate</span>
+          </div>
+          {/* card6 */}
+           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68   text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+            <img
+              src="public/c_original_logo_icon_146611.png"
+              alt="html-logo"
+              className="w-25 mb-3 mx-auto"
+            />
+            <span className="font-bold  text-center">C</span>
+            <br />
+            <span className="font-semibold  text-center">Basic</span>
+          </div>
+          {/* card7 */}
+           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68   text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+            <img
+              src="public/file_type_python_icon_130221.png"
+              alt="html-logo"
+              className="w-25 mb-3 mx-auto"
+            />
+            <span className="font-bold  text-center">Python</span>
+            <br />
+            <span className="font-semibold  text-center">Basic</span>
+          </div>
+          {/* card8 */}
+           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68   text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+            <img
+              src="public/java_original_logo_icon_146458.png"
+              alt="html-logo"
+              className="w-25 mb-3 mx-auto"
+            />
+            <span className="font-bold  text-center">Java</span>
+            <br />
+            <span className="font-semibold  text-center">Basic</span>
+          </div>
+          {/* card9 */}
           <div className="mx-auto   bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68  animate-[var(--animate-pop-up)] flex-none text-center shadow-2xl hover:scale-105 transition-transform duration-300">
             <img
               src="public/icons8-firebase-480.png"
@@ -157,7 +202,7 @@ const Portfolio = () => {
             <br />
             <span className="font-semibold  text-center">Intermediate</span>
           </div>
-          {/* card6 */}
+          {/* card10 */}
           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40 md:w-68   text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
             <img
               src="public/github.png"
