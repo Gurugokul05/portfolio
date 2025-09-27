@@ -4,6 +4,8 @@ import { Menu, X } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
 import "./Portfolio.css";
 
 const Portfolio = () => {
@@ -85,7 +87,7 @@ const Portfolio = () => {
         {/* img section */}
         <div className="h-auto md:mt-20 flex flex-col  bg-inherit m-6 rounded-2xl  justify-center mt-10 sm:mt-20 items-center p-4 sm:p-10 md:flex-row  text-center font-playfair  md:p-0">
           <img
-            src="/WhatsApp Image 2025-09-23 at 18.02.17_67974a1d.jpg"
+            src="/WhatsApp Image 2025-09-23 at 18.02.17_67974a1d.jp"
             alt="Gurugokul"
             className=" rounded-full md:h-96 md:rounded-full mb-7 animate-[var(--animate-pop-up)] transform hover:scale-110 transition ease-linear duration-300"
           />
@@ -94,19 +96,21 @@ const Portfolio = () => {
 
         {/* skill */}
         <div className="">
-
-        <h1 className="text-center mb-10 ">
-          <span className="text-center  font-medium text-2xl md:font-bold md:text-4xl ">
-            Skills
-          </span>
-        </h1>
+          <h1 className="text-center mb-10 ">
+            <span className="text-center  font-medium text-2xl md:font-bold md:text-4xl ">
+              Skills
+            </span>
+          </h1>
         </div>
         <div
           className="flex  flex-row flex-wrap  gap-4  mx-2 rounded-2xl p-2.5 md:mx-7 "
           id="skills"
         >
           {/* card1 */}
-          <div data-aos="fade" className=" mx-auto md:w-64 bg-stone-100 shadow-2xl p-8 rounded-2xl mt-5 w-40 animate-[var(--animate-pop-up)] flex-none text-center hover:scale-105 transition-transform duration-300">
+          <div
+            data-aos="fade"
+            className=" mx-auto md:w-64 bg-stone-100 shadow-2xl p-8 rounded-2xl mt-5 w-40 animate-[var(--animate-pop-up)] flex-none text-center hover:scale-105 transition-transform duration-300"
+          >
             <img
               src="/html-5.png"
               alt="html-logo"
@@ -149,9 +153,12 @@ const Portfolio = () => {
             <br />
             <span className="font-semibold  text-center">Intermediate</span>
           </div>
-          
+
           {/* card5 */}
-           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64  animate-[var(--animate-pop-up)] text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+          <div
+            className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64  animate-[var(--animate-pop-up)] text-center shadow-2xl hover:scale-105 transition-transform duration-300"
+            data-aos="slide-right"
+          >
             <img
               src="/javascript_original_logo_icon_146455.png"
               alt="html-logo"
@@ -162,7 +169,10 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Intermediate</span>
           </div>
           {/* card6 */}
-           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64 animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+          <div
+            className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64 animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300"
+            data-aos="slide-right"
+          >
             <img
               src="/c_original_logo_icon_146611.png"
               alt="html-logo"
@@ -173,7 +183,10 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Basic</span>
           </div>
           {/* card7 */}
-           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64 animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+          <div
+            className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64 animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300"
+            data-aos="slide-right"
+          >
             <img
               src="/file_type_python_icon_130221.png"
               alt="html-logo"
@@ -184,7 +197,10 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Basic</span>
           </div>
           {/* card8 */}
-           <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64 animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+          <div
+            className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64 animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300"
+            data-aos="slide-right"
+          >
             <img
               src="/java_original_logo_icon_146458.png"
               alt="html-logo"
@@ -206,7 +222,10 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Intermediate</span>
           </div>
           {/* card10 */}
-          <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64 animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300" data-aos="slide-right">
+          <div
+            className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64 animate-[var(--animate-pop-up)]  text-center shadow-2xl hover:scale-105 transition-transform duration-300"
+            data-aos="slide-right"
+          >
             <img
               src="/github.png"
               alt="html-logo"
@@ -230,10 +249,10 @@ const Portfolio = () => {
         "
           id="project"
         >
-         <div
-  className="mx-auto flex-none md:p-15 bg-stone-100 p-6 rounded-2xl mt-5 w-auto md:w-1/2 text-center shadow-2xl hover:scale-105 transition-transform duration-300"
-  data-aos="fade-up"
->
+          <div
+            className="mx-auto flex-none md:p-15 bg-stone-100 p-6 rounded-2xl mt-5 w-auto md:w-1/2 text-center shadow-2xl hover:scale-105 transition-transform duration-300"
+            data-aos="fade-up"
+          >
             <img
               src=" /Screenshot 2025-09-26 072852.png"
               alt="html-logo"
@@ -252,6 +271,29 @@ const Portfolio = () => {
               <strong>Tech Stack:</strong> React, Firebase, Firestore DB
             </span>
           </div>
+        </div>
+        {/* Contact me  */}
+        <div className="mx-8 bg-stone-100 shadow-2xl text-center p-5  rounded-xl md:flex justify-evenly items-center">
+          <span className="font-medium text-2xl md:font-bold md:text-4xl">
+            Contact Me !!
+          </span>
+          <br />
+          <br />
+          <form action="" className="mt-8">
+            <TextField id="outlined-basic" label="Name" variant="outlined" className="md:w-full w-full" required/>
+            <br />
+            <br />
+
+            <TextField id="outlined-basic" label="Email" variant="outlined" className="md:w-full w-full" required/>
+            <br />
+            <br />
+            <Button variant="contained" className="md:w-full md:h-15" onSubmit={()=>handleSubmit}>contact me</Button><br /><br />
+            <span className="text-gray-600 md:text-2xl">Feel free to reach out for collaborations, projects, or just to connect!</span>
+          </form>
+        </div>
+        {/* Footer */}
+        <div>
+          
         </div>
       </div>
     </div>
