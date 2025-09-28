@@ -41,8 +41,7 @@ const Portfolio = () => {
           </button>
 
           {showMenu && (
-            <ul className="absolute top-16 left-0 w-full bg-white/80 backdrop-blur-md shadow-lg flex flex-col items-center gap-4 py-6 z-50 md:hidden transition-all duration-300 ease-in-out"
->
+            <ul className="absolute top-16 left-0 w-full bg-white/80 backdrop-blur-md shadow-lg flex flex-col items-center gap-4 py-6 z-50 md:hidden transition-all duration-300 ease-in-out">
               <li>
                 <a href="#">About Me</a>
               </li>
@@ -275,13 +274,14 @@ const Portfolio = () => {
           data-aos="flip-left"
           id="project"
         >
+          {/* project 1 */}
           <div
             className="mx-auto flex-none md:p-15 bg-stone-100 p-6 rounded-2xl mt-5 w-auto md:w-1/2 text-center shadow-2xl  "
             data-aos="fade-up"
           >
             <img
               src=" /Screenshot 2025-09-26 072852.png"
-              alt="html-logo"
+              alt="Project 1"
               className="w-auto mb-7 mx-auto rounded-2xl "
             />
             <span className="font-semibold md:font-bold md:text-2xl text-center">
@@ -293,9 +293,120 @@ const Portfolio = () => {
               items to cart, and place food orders online-similar to platforms
               like Swiggy or Zomato.
             </span>
+            <span className="block mt-3 text-xs font-medium md:text-sm text-gray-500">
+              <strong>Key Features:</strong> Browse menu, Add to cart, Place
+              orders, Responsive design
+            </span>
             <span className="block mt-3 text-xs font-medium md:text-lg text-gray-500">
               <strong>Tech Stack:</strong> React, Firebase, Firestore DB
             </span>
+            <div className="flex justify-center gap-3 mt-4">
+              <a
+                href="https://github.com/Gurugokul05/Yoga-Family-Restaurant"
+                target="_blank"
+                className="px-3 py-1 bg-black text-white rounded-md"
+              >
+                View Code
+              </a>
+              <a
+                href="https://yoga-family-restaurant-fupdyuasz-gurugokuls-projects-2788b1c3.vercel.app/"
+                target="_blank"
+                className="px-3 py-1 bg-green-600 text-white rounded-md"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+          {/* Project 2 */}
+          <div
+            className="mx-auto flex-none md:p-15 bg-stone-100 p-6 rounded-2xl mt-5 w-auto md:w-1/2 text-center shadow-2xl  "
+            data-aos="fade-up"
+          >
+            <img
+              src="public/club_registration.png"
+              alt="Project 2"
+              className="w-auto mb-7 mx-auto rounded-2xl "
+            />
+            <span className="font-semibold md:font-bold md:text-2xl text-center">
+              Club Event Registration Page
+            </span>
+            <br />
+            <span className="font-light md:font-medium text-right md:text-lg">
+              A responsive registration portal that captures student information
+              for hackathon participation. Students can fill a registration form
+              (name, email, year, team members, ), and receive a confirmation
+              email with their registration ID. Admins can view registrants for
+              easy event management.
+            </span>
+            <span className="block mt-3 text-xs font-medium md:text-sm text-gray-500 p-4">
+              <strong>Features:</strong> Student registration form • Email
+              confirmation
+            </span>
+
+            <span className="block mt-3 text-xs font-medium md:text-lg text-gray-500">
+              <strong>Tech Stack:</strong> React, Firebase, Firestore DB
+            </span>
+            <div className="flex justify-center gap-3 mt-4">
+              <a
+                href="https://github.com/Gurugokul05/pixelit-website"
+                target="_blank"
+                className="px-3 py-1 bg-black text-white rounded-md"
+              >
+                View Code
+              </a>
+              <a
+                href="https://pixelit-website-e24795llt-gurugokuls-projects-2788b1c3.vercel.app/"
+                target="_blank"
+                className="px-3 py-1 bg-green-600 text-white rounded-md"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+          {/* Project 3 */}
+          <div
+            className="mx-auto flex-none md:p-15 bg-stone-100 p-6 rounded-2xl mt-5 w-auto md:w-1/2 text-center shadow-2xl  "
+            data-aos="fade-up"
+          >
+            <img
+              src="public/club_dashboard.png"
+              alt="Project 3"
+              className="w-auto mb-7 mx-auto rounded-2xl "
+            />
+            <span className="font-semibold md:font-bold md:text-2xl text-center">
+              Club Event - User & Admin Dashboard
+            </span>
+            <br />
+            <span className="font-light md:font-medium text-right md:text-lg">
+              A responsive dashboard for club events where students can select
+              their problem statements, and view their marks and attendance.
+              Admins can manage participants, assign marks, and record
+              attendance, making event management and performance tracking easy
+              and efficient.
+            </span>
+            <span className="block mt-3 text-xs font-medium md:text-sm text-gray-500">
+              <strong>Key Features:</strong> Problem selection, Marks &
+              Attendance tracking, Admin management
+            </span>
+            <span className="block mt-3 text-xs font-medium md:text-lg text-gray-500">
+              <strong>Tech Stack:</strong> React, Firebase, Firestore DB
+            </span>
+            <div className="flex justify-center gap-3 mt-4">
+              <a
+                href="https://github.com/Gurugokul05/problem-statement"
+                target="_blank"
+                className="px-3 py-1 bg-black text-white rounded-md"
+              >
+                View Code
+              </a>
+              <a
+                href="https://problem-statement-4kaqj5ydu-gurugokuls-projects-2788b1c3.vercel.app/"
+                target="_blank"
+                className="px-3 py-1 bg-green-600 text-white rounded-md"
+              >
+                Live Demo
+              </a>
+            </div>
           </div>
         </div>
         {/* Contact me  */}
@@ -347,7 +458,7 @@ const Portfolio = () => {
         {/* Footer */}
         <div className="flex flex-row  justify-center items-center text-center mt-10 bg-neutral-600   shadow-2xl p-6">
           <ul className=" md:flex md:flex-wrap md:flex-col md:gap-2 sm:space-x-4 md:text-sm sm:text-base md:mt-2 sm:mt-0">
-            <span className="text-amber-50 font-medium text-2xl md:font-bold md:text-6xl">
+            <span className="text-amber-50 font-medium text-2xl md:font-bold md:text-3xl">
               GURUGOKUL
             </span>
             <br />
