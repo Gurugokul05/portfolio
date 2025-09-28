@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin } from "react-icons/fa";
 import "./Portfolio.css";
 
 const Portfolio = () => {
@@ -21,6 +21,10 @@ const Portfolio = () => {
         <header className=" flex-wrap w-full flex items-center  justify-between  px-3 py-2  ">
           <Helmet>
             <title>Gurugokul</title>
+            <meta
+              name="description"
+              content="Gurugokul - B.Tech IT student portfolio showcasing skills in React, Firebase, Tailwind, and full-stack projects."
+            />
           </Helmet>
 
           <h1 className=" text-2xl text-center sm:text-4xl md:text-5xl font-bold text-gray-800 tracking-wide p-4">
@@ -37,7 +41,8 @@ const Portfolio = () => {
           </button>
 
           {showMenu && (
-            <ul className="absolute top-16 left-0 w-full bg-neutral-50 flex flex-col items-center space-y-4 py-4 md:hidden">
+            <ul className="absolute top-16 left-0 w-full bg-white/80 backdrop-blur-md shadow-lg flex flex-col items-center gap-4 py-6 z-50 md:hidden transition-all duration-300 ease-in-out"
+>
               <li>
                 <a href="#">About Me</a>
               </li>
@@ -74,7 +79,10 @@ const Portfolio = () => {
           className=" text-center mx-5  mt-25 md:text-center md:mx-auto md:mt-36"
           id="aboutme"
         >
-          <h1 className=" text-center mx-2 mt-25 md:text-center md:mx-auto md:mt-36 md:w-5xl">
+          <h1
+            className=" text-center mx-2 mt-25 md:text-center md:mx-auto md:mt-36 md:w-5xl"
+            data-aos="fade-right"
+          >
             <span className="font-bold text-xl md:font-extrabold md:text-6xl">
               Hi, I'm Gurugokul{" "}
             </span>
@@ -87,7 +95,10 @@ const Portfolio = () => {
         </div>
 
         {/* img section */}
-        <div className="h-auto md:mt-20 flex flex-col  bg-inherit m-6 rounded-2xl  justify-center mt-10 sm:mt-20 items-center p-4 sm:p-10 md:flex-row  text-center font-playfair  md:p-0">
+        <div
+          className="h-auto md:mt-20 flex flex-col  bg-inherit m-6 rounded-2xl  justify-center mt-10 sm:mt-20 items-center p-4 sm:p-10 md:flex-row  text-center font-playfair  md:p-0"
+          data-aos="fade-left"
+        >
           <img
             src="/WhatsApp Image 2025-09-23 at 18.02.17_67974a1d.jpg"
             alt="Gurugokul"
@@ -98,7 +109,7 @@ const Portfolio = () => {
 
         {/* skill */}
         <div className="">
-          <h1 className="text-center mb-10 ">
+          <h1 className="text-center mb-10 " data-aos="zoom-in">
             <span className="text-center  font-medium text-2xl md:font-bold md:text-4xl ">
               Skills
             </span>
@@ -110,7 +121,7 @@ const Portfolio = () => {
         >
           {/* card1 */}
           <div
-            data-aos="fade"
+            data-aos="zoom-in"
             className=" mx-auto md:w-64 bg-stone-100 shadow-2xl p-8 rounded-2xl mt-5 w-40   flex-none text-center  "
           >
             <img
@@ -123,7 +134,10 @@ const Portfolio = () => {
             <span className="font-semibold  text-center ">Intermediate</span>
           </div>
           {/* card2 */}
-          <div className="mx-auto  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64    flex-none text-center shadow-2xl  ">
+          <div
+            className="mx-auto  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64    flex-none text-center shadow-2xl  "
+            data-aos="zoom-in"
+          >
             <img
               src="/css-3.png"
               alt="html-logo"
@@ -134,7 +148,10 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Intermediate</span>
           </div>
           {/* card3 */}
-          <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64     text-center shadow-2xl  ">
+          <div
+            className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64     text-center shadow-2xl  "
+            data-aos="zoom-in"
+          >
             <img
               src="/programing.png"
               alt="html-logo"
@@ -145,7 +162,10 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Intermediate</span>
           </div>
           {/* card4 */}
-          <div className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64     text-center shadow-2xl  ">
+          <div
+            className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64     text-center shadow-2xl  "
+            data-aos="zoom-in"
+          >
             <img
               src="/icons8-tailwind-css-480.png"
               alt="html-logo"
@@ -159,7 +179,7 @@ const Portfolio = () => {
           {/* card5 */}
           <div
             className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64    text-center shadow-2xl  "
-            data-aos="slide-right"
+            data-aos="zoom-in"
           >
             <img
               src="/javascript_original_logo_icon_146455.png"
@@ -173,7 +193,7 @@ const Portfolio = () => {
           {/* card6 */}
           <div
             className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64    text-center shadow-2xl  "
-            data-aos="slide-right"
+            data-aos="zoom-in"
           >
             <img
               src="/c_original_logo_icon_146611.png"
@@ -187,7 +207,7 @@ const Portfolio = () => {
           {/* card7 */}
           <div
             className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64    text-center shadow-2xl  "
-            data-aos="slide-right"
+            data-aos="zoom-in"
           >
             <img
               src="/file_type_python_icon_130221.png"
@@ -201,7 +221,7 @@ const Portfolio = () => {
           {/* card8 */}
           <div
             className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64    text-center shadow-2xl  "
-            data-aos="slide-right"
+            data-aos="zoom-in"
           >
             <img
               src="/java_original_logo_icon_146458.png"
@@ -213,7 +233,10 @@ const Portfolio = () => {
             <span className="font-semibold  text-center">Basic</span>
           </div>
           {/* card9 */}
-          <div className="mx-auto   bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64    flex-none text-center shadow-2xl  ">
+          <div
+            className="mx-auto   bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64    flex-none text-center shadow-2xl  "
+            data-aos="zoom-in"
+          >
             <img
               src="/icons8-firebase-480.png"
               alt="html-logo"
@@ -226,7 +249,7 @@ const Portfolio = () => {
           {/* card10 */}
           <div
             className="mx-auto flex-none  bg-stone-100 p-8 rounded-2xl mt-5 w-40  md:w-64    text-center shadow-2xl  "
-            data-aos="slide-right"
+            data-aos="zoom-in"
           >
             <img
               src="/github.png"
@@ -241,7 +264,7 @@ const Portfolio = () => {
 
         {/* projects */}
 
-        <h1 className="text-center mb-10 mt-10">
+        <h1 className="text-center mb-10 mt-10" data-aos="flip-left">
           <span className="text-center font-medium text-2xl md:font-bold md:text-4xl ">
             Projects
           </span>
@@ -249,6 +272,7 @@ const Portfolio = () => {
         <div
           className="flex flex-col m-6 
         "
+          data-aos="flip-left"
           id="project"
         >
           <div
@@ -278,6 +302,7 @@ const Portfolio = () => {
         <div
           className="mx-8 bg-stone-100 shadow-2xl text-center p-5  rounded-xl md:flex justify-evenly items-center"
           id="contactMe"
+          data-aos="fade-up"
         >
           <span className="font-medium text-2xl md:font-bold md:text-4xl">
             Contact Me
@@ -320,39 +345,47 @@ const Portfolio = () => {
           </form>
         </div>
         {/* Footer */}
-        <div className="flex flex-row justify-center items-center text-center mt-10 bg-neutral-600   shadow-2xl p-6">
-          <ul className=" md:flex md:flex-wrap md:gap-2 sm:space-x-4 md:text-sm sm:text-base md:mt-2 sm:mt-0">
-            <span className="text-amber-50 font-medium text-2xl md:font-bold md:text-4xl">
+        <div className="flex flex-row  justify-center items-center text-center mt-10 bg-neutral-600   shadow-2xl p-6">
+          <ul className=" md:flex md:flex-wrap md:flex-col md:gap-2 sm:space-x-4 md:text-sm sm:text-base md:mt-2 sm:mt-0">
+            <span className="text-amber-50 font-medium text-2xl md:font-bold md:text-6xl">
               GURUGOKUL
             </span>
             <br />
             <br />
             <b></b>
-            <li className="text-stone-100 p-1 sm:p-2 cursor-pointer hover:text-slate-500 text-lg ">
+            <li className="text-stone-100 md:text-2xl p-1 sm:p-2 cursor-pointer hover:text-slate-500 text-lg ">
               <a href="#">About Me</a>
             </li>
-            <li className="text-stone-100 p-1 sm:p-2 cursor-pointer hover:text-slate-500  text-lg">
+            <li className="text-stone-100 md:text-2xl p-1 sm:p-2 cursor-pointer hover:text-slate-500  text-lg">
               <a href="#skills">Skills</a>
             </li>
-            <li className="text-stone-100 p-1 sm:p-2 cursor-pointer hover:text-slate-500  text-lg">
+            <li className="text-stone-100 md:text-2xl p-1 sm:p-2 cursor-pointer hover:text-slate-500  text-lg">
               <a href="#project">Project</a>
             </li>
-            <li className="text-stone-100 p-1 sm:p-2 cursor-pointer hover:text-slate-500  text-lg">
+            <li className="text-stone-100 md:text-2xl p-1 sm:p-2 cursor-pointer hover:text-slate-500  text-lg">
               <a href="#contactMe">Contact Me</a>
-            </li><br />
+            </li>
+            <br />
             <hr /> <br />
             <div className="flex justify-center">
               <li className="text-stone-100 p-1 sm:p-2 cursor-pointer hover:text-slate-500  text-lg">
                 <a href="https://github.com/Gurugokul05">
-                  <FaGithub />
+                  <FaGithub className="text-3xl md:text-5xl hover:text-white hover:scale-110 transition" />
                 </a>
               </li>
               <li className="text-stone-100 p-1 sm:p-2 cursor-pointer hover:text-slate-500  text-lg ">
-                <a href="">
-                  <FaLinkedin />
+                <a href="https://www.linkedin.com/in/gurugokul-a-a401a5378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                  <FaLinkedin className="text-3xl md:text-5xl hover:text-white hover:scale-110 transition" />
                 </a>
               </li>
+              <hr />
+              <br />
+              <br />
+              <br />
             </div>
+            <li className="md:text-2xl p-1 sm:p-2  text-center mt-4 text-gray-300 text-sm ">
+              © Created by Gurugokul | All rights Reserved
+            </li>
           </ul>
         </div>
       </div>
