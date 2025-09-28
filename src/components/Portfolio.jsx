@@ -8,6 +8,8 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 import "./Portfolio.css";
 
 const Portfolio = () => {
@@ -15,6 +17,65 @@ const Portfolio = () => {
     AOS.init({ duration: 1000, once: true });
   }, []);
   const [showMenu, setShowMenu] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    try {
+      const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+      const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+      const TEMPLATE_ID_OWNER = import.meta.env.VITE_TEMPLATE_ID_OWNER;
+      const USER_ID = import.meta.env.VITE_PUBLIC_KEY;
+
+      const templateParamsOwner = {
+        from_name: name,
+        from_email: email,
+        message: message,
+      };
+
+      const templateParamsUser = {
+        to_name: name,
+        to_email: email,
+        from_name: "Gurugokul",
+      };
+      emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParamsUser, USER_ID).then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          Swal.fire(
+            "Sent!",
+            "Your message has been sent successfully.",
+            "success"
+          );
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          Swal.fire(
+            "Error",
+            "Something went wrong, please try again.",
+            "error"
+          );
+        }
+      );
+
+      emailjs
+        .send(SERVICE_ID, TEMPLATE_ID_OWNER, templateParamsOwner, USER_ID)
+        .then(
+          (response) => {
+            console.log("Owner Email SUCCESS!", response.status, response.text);
+          },
+          (error) => {
+            console.log("Owner Email FAILED...", error);
+          }
+        );
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
   return (
     <div>
       <div className=" min-h-screen bg-[url('/18106012.jpg')] bg-cover bg-center bg-fixed">
@@ -280,7 +341,7 @@ const Portfolio = () => {
             data-aos="fade-up"
           >
             <img
-              src=" /Screenshot 2025-09-26 072852.png"
+              src="/Screenshot 2025-09-26 072852.png"
               alt="Project 1"
               className="w-auto mb-7 mx-auto rounded-2xl "
             />
@@ -323,7 +384,7 @@ const Portfolio = () => {
             data-aos="fade-up"
           >
             <img
-              src="public/club_registration.png"
+              src="/club_registration.png"
               alt="Project 2"
               className="w-auto mb-7 mx-auto rounded-2xl "
             />
@@ -369,7 +430,7 @@ const Portfolio = () => {
             data-aos="fade-up"
           >
             <img
-              src="public/club_dashboard.png"
+              src="/club_dashboard.png"
               alt="Project 3"
               className="w-auto mb-7 mx-auto rounded-2xl "
             />
@@ -420,30 +481,54 @@ const Portfolio = () => {
           </span>
           <br />
           <br />
-          <form action="" className="mt-8">
+          <form className="mt-8" onSubmit={handleSubmit}>
             <TextField
-              id="outlined-basic"
+              id="name-field"
               label="Name"
+              value={name}
               variant="outlined"
               className="md:w-full w-full"
               required
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
             />
             <br />
             <br />
 
             <TextField
-              id="outlined-basic"
+              id="email-field"
+              name="email"
               label="Email"
               variant="outlined"
               className="md:w-full w-full"
               required
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
             />
+            <br />
+            <br />
+            <TextField
+              id="message-field"
+              value={message}
+              label="Message"
+              variant="outlined"
+              className="md:w-full w-full"
+              required
+              multiline
+              rows={4}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
+            />
+
             <br />
             <br />
             <Button
               variant="contained"
               className="md:w-full md:h-15"
-              onSubmit={() => handleSubmit}
+              type="submit"
             >
               contact me
             </Button>
